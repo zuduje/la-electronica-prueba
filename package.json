@@ -1,0 +1,52 @@
+{
+  "name": "la-electronic-tecnitial-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node built/bin/www.js",
+    "build": "tsc & grunt copy",
+    "build:watch": "tsc -w & grunt copy & grunt watch",
+    "dev": "tsc -w & grunt copy & grunt watch & nodemon built/bin/www.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "date-fns": "^2.29.2",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "~4.16.1",
+    "helmet": "^6.0.0",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.3",
+    "morgan": "~1.9.1",
+    "mqtt": "^4.3.7",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1",
+    "validator": "^13.7.0",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/bcrypt": "^5.0.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/compression": "^1.7.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.2",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.7.13",
+    "@types/validator": "^13.7.6",
+    "grunt": "^1.5.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^3.2.0",
+    "grunt-contrib-nodeunit": "^4.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
